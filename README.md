@@ -16,10 +16,10 @@
 まず`src`ディレクトリ内で`multisteplib_poisson.c`をDLLファイルにコンパイルします。
 コンパイラには[`Clang`](https://clang.llvm.org)または[`GCC`](https://gcc.gnu.org)を推奨します。  
 PowerShell（またはコマンドプロンプト）で`src`ディレクトリに移動したうえで以下のコマンドを実行してください。
-[`gnu make`](https://www.gnu.org/software/make/)向けに`src/makefile`を用意しています。
+[`GNU Make`](https://www.gnu.org/software/make/)向けに`src/makefile`を用意しています。
 
 ```powershell
-# Gnu make が利用できる場合
+# GNU Make が利用できる場合
 make
 # Clangでコンパイルする場合
 clang -shared -O2 -o multistep.dll multisteplib_poisson.c
